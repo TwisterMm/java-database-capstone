@@ -3,6 +3,7 @@
 A Spring Boot application uses both MVC and REST controllers. Thymeleaf templates are used for the Admin and Doctor dashboards, while REST APIs serve all other modules. The application interacts with relational DB MySQL (for patient, doctor, appointment, and admin data) and NoSQL Document DB MongoDB (for prescriptions). All controllers route requests through a common service layer, which in turn delegates to the appropriate repositories.
 
 # Architecture
+```text
 +-----------------------------------+    +---------------------------------------------------+
 
 |            Dashboards             |    |                    RESTModules                    |
@@ -45,3 +46,4 @@ A Spring Boot application uses both MVC and REST controllers. Thymeleaf template
 |                |  Appointment, Admin) |            +--------------------+                  |
 |                +----------------------+                                                    |
 +--------------------------------------------------------------------------------------------+
+```
